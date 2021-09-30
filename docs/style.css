@@ -1,14 +1,8 @@
-h1{font-size:36px}
-h2{font-size:30px}
-h3{font-size:24px}
-h4{font-size:20px}
-h5{font-size:18px}
-h6{font-size:16px}
 :root{
   /* Color Scheme */
     --primary-color: #2ec4b6;
     
-    --secondary-color: #cbf3f0;
+    --secondary-color: #000;
     
     --terciary-color: #ffbf69;
     --terciary-hover-color: #ffffff;
@@ -22,38 +16,51 @@ h6{font-size:16px}
 .red_bg{
     background-color: red;
 }
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Lato", sans-serif;	
+    font-family: "Lato", sans-serif;
     margin: 0;
 	padding: 0;
 	border: 0;
 }
 header{
+    margin: 0;
+    height: 10%;
+    width: 100%;
+}
+content{
+    margin-top: 10%;
+}
+footer{
     background: var(--secondary-color);
     margin: 0;
-    padding: 0;
+    height: 10%;
+    width: 100%;
 }
-.head{
-    display: inline-flex;
-}
-.headText{
-    display: block;
+.title_picture{
+    background: url("sunset.jpg");
+    background-color: var(--background-color);
 }
 .title{
     color: var(--primary-color);
     text-align: center;
-    border-left: 50px;
-    margin: 10px;
+    line-height: .9;
+    background-position: bottom right;
 }
 .headshot{
-    border-radius: 50%
+    border-radius: 50%;
 }
+
 body, html {
-    height: 100%;
     color: var(--text-color);
     background-color: var(--background-color);
-    line-height: 1.8;
+    line-height: 2;
     font-family:Verdana,sans-serif;
     font-size:15px;
     margin: 0;
@@ -62,10 +69,14 @@ body, html {
 
 /* Navigation Bar */
 .nav {
+    background: var(--secondary-color);
     display:inline;
+    position: fixed;
+    width: inherit;
+    height: inherit;
 }
 .link{
-    margin-top: 1000px;
+    margin-top: 10px;
     margin-left: 25px;
     padding: 10px;
     border-radius: 1000px;
