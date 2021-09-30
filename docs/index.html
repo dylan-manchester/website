@@ -4,61 +4,24 @@
         <title>
             Dylan Manchester
         </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header>
-            <h1 class="title">Welcome To My Home<span class=h1>page</span></h1>
-            <nav>
-                <ul draggable="true">
-                    <li class="contacts"><a href="https://github.com/dylan-manchester" target="_blank">Github</a> </li>
-                    <li class="contacts"><a href="contact.html">Suggestions</a></li>
-                </ul>
-            </nav>
+            <div class="head">
+                <img class="headshot animate__animated animate__fadeIn animate__slow animate__delay-1s" src="headshot.jpg" width=10%>
+                <div class="headText">
+                    <h1 class="title animate__animated animate__backInDown">Welcome To My Homepage</h1>
+                    <div class="nav animate__animated animate__fadeIn animate__slow animate__delay-1s">
+                        <a class="link" title="Linkedin Profile" href="https://www.linkedin.com/in/dylan-manchester-hcl/" target="_blank">Linkedin</a>
+                        <a class="link" title="View Projects" href="https://github.com/dylan-manchester" target="_blank">Github</a>
+                        <a class="link" title="Download Resume" href="https://github.com/dylan-manchester/website/raw/main/DylanManchester_Resume.pdf" target="_blank">Resume</a>
+                        <a class="link" title="Have Fun" href="playground.html">Playground</a>
+                    </div>
+                </div>
+            </div>
         </header>
-        <div class="image">
-            <img src="headshot.jpg" width=50%>
-        </div>
-        <div class="table">
-        <table>
-            <tr>
-                <td colspan=2>
-                    Contacts
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Phone:
-                </td>
-                <td>
-                    <a href="phone:+1">
-                        (###) ###-####</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Email:
-                </td>
-                <td>
-                    <a href="mailto:dylanmanchester6@gmail.com">
-                        dylanmanchester6@gmail.com</a>
-                </td>
-            </tr>
-        </table>
-        </div>
-        <div>
-            <h1>This is the interactive playground</h1>
-            <ul name="playground">
-                <li class="editableItemList">First Item</li>
-            </ul>
-            <input id="playgroundInput" type="text">
-        </div>
-        <div>
-            <button id="submitButton">Submit!</button>
-        </div>
+        <div>Hi, I'm Dylan! I built this webpage from scratch in order to itch of curiosity.</div>
     </body>
-
-
-
 </html>
-<script src="script.js"></script>

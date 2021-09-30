@@ -1,24 +1,21 @@
 var list = document.getElementsByClassName('editableItemList');
-var deleteParent = function(){
-    this.parentElement.remove();
-}
+var deleteParent = function(){this.parentElement.remove();}
 var red = 
     function(){
         var temp = this.classList.toggle('red');
         if (temp){
             var button = document.createElement('button');
-            button.innerHTML = "X"
-            button.classList 
+            button.innerHTML = "X";
+            button.classList.toggle('red_bg')
             button.addEventListener('click',deleteParent);
-            button.backgroundColor = "red";
-            this.appendChild(button);
+            this.prepend(button);
         }
         else{
             this.getElementsByTagName('button')[0].remove();
         }
     }
-var playground = document.querySelector('ul[name=playground]');
-var submitButton = document.getElementById("submitButton");
+var playground = document.getElementById("playgroundList");
+var submitButton = document.getElementById("playgroundSubmit");
 var playgroundInput = document.getElementById('playgroundInput');
 playgroundInput.addEventListener('keypress',addItem);
 submitButton.addEventListener('click',addItem);
@@ -31,6 +28,7 @@ function addItem(event){
         var playgroundInput = document.getElementById('playgroundInput');
         var textNode = document.createTextNode(playgroundInput.value);
         li.classList.add('editableItemList');
+        li.classList.add('show');
         li.addEventListener('click',red);
         li.appendChild(textNode);
         playground.appendChild(li);
