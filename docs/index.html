@@ -8,42 +8,41 @@
         <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
     </head>
     <body>
-        <!-- HEADER -->
+<!-- HEADER -->
         <header id="header">
             <div class="title">
-                <h1 id="greeting">Welcome!</h1>
-            </div>
-            <div id="navbar">
-                <a class="link" title="Linkedin Profile" href="https://www.linkedin.com/in/dylan-manchester-hcl/" target="_blank">Linkedin</a>
-                <a class="link" title="View Projects" href="https://github.com/dylan-manchester" target="_blank">Github</a>
-                <a class="link" title="Download Resume" href="https://github.com/dylan-manchester/website/raw/main/DylanManchester_Resume.pdf" target="_blank">Resume</a>
-                <a class="link" title="Have Fun" href="playground.html">Playground</a>
-                <a class="link" title="Contact" href="contact.html">Contact</a>
+                <a id="home" title="Home" href="index.html">
+                    <h1 id="greeting">Welcome!</h1>
+                </a>
             </div>
         </header>
         <div id="content">
-            <div id="About">
+            <div id="about" class="section">
                 <h1>About Me</h1>
                 <h4>
                 Hi! I'm Dylan, a backend developer with the a knack for machine learning. I am passionate about helping our planet. From picking up litter to developing machine learning solutions, I try to help in any way I can. 
                 </h4>
             </div>
-            <div id="projects">
+            <div id="projects" class="section">
                 <h1>Projects</h1>
-                <a id="website" class="project" href="process.html">
+                <a id="website" class="project" title="Website building process" href="process.html" target="_blank">
                     <h2>Website building process</h2>
-                    <img src="https://via.placeholder.com/600x300.png">
+                    <img src="media/process.png">
                 </a>
-                <a id="CRUD" class="project" title="CRUD project" href="https://crud.dmanchester.info" target="_blank">   
+                <a id="crud" class="project" title="Spring Boot CRUD App" href="https://crud.dmanchester.info" target="_blank">   
                     <h2>Spring Boot CRUD App</h2>
                     <img src="media/crud.png">
                 </a>
-                <a id="Flag" class="project" title="Flag project" href="https://flag.dmanchester.info" target="_blank">
+                <a id="flag" class="project" title="Flag Selector" href="https://flag.dmanchester.info" target="_blank">
                     <h2>Flag Selector</h2>
                     <img src="media/flag.png">
                 </a>
+                <a id="pptx" class="project" title="Powerpoint to View Converter" href="https://github.com/dylan-manchester/pptx2video" target="_blank">
+                    <h2>Powerpoint to View Converter</h2>
+                    <img src="media/wip.png">
+                </a>
             </div>
-            <div id="certifications">
+            <div id="certifications" class="section">
                 <h1>Certifications</h1>
                 <div class="fade">
                     <div class="slide-container">
@@ -60,14 +59,36 @@
                             <div class="slide">
                                 <img src="media/azure-ai-engineer-600x600.png" height="300" width="300">
                             </div>
+                            <div class="slide">
+                                <img src="media/azure-data-scientist-associate-600x600.png" height="300" width="300">
+                            </div>
+                            <div class="slide">
+                                <img src="media/azure-developer-associate-600x600.png" height="300" width="300">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- FOOTER -->
+<!-- FOOTER -->
         <footer>
-            <div>© 2021</div>
+            <div>
+                <h4>Last Updated on 3/22/2022</h4>
+            </div>
+            <div id="connect">
+                <h2>Connect</h2>
+                <div id="social">
+                    <a class="social" title="Github" href="https://github.com/dylan-manchester" target="_blank">
+                        <img class="social-img" src="media/github.png">
+                    </a>
+                    <a class="social" title="Resume" href="https://github.com/dylan-manchester/resume/raw/main/DylanManchester_Resume.pdf" target="_blank">
+                        <img class="social-img" src="media/resume.png">
+                    </a>
+                    <a class="social" title="Linkedin" href="https://www.linkedin.com/in/dylan-manchester-hcl/" target="_blank"> 
+                        <img class="social-img" src="media/linkedin.png">
+                    </a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
