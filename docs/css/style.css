@@ -114,8 +114,11 @@ header.hide{
     top: var(--header-size);
     margin-bottom: calc( var(--header-size) + var(--footer-size) );
     background-color: var(--background-color);
-    margin-left: 25px;
-    margin-right: 25px;
+}
+
+#about {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .section {
@@ -193,8 +196,8 @@ header.hide{
 footer{
     background: var(--secondary-color);
     position: fixed;
-    margin: 0;
     bottom: 0;
+    margin: 0;
     height: var(--footer-size);
     width: 100%;
     z-index: -100;
