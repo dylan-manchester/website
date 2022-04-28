@@ -16,7 +16,7 @@
     --header-size: 20vmin;
     --footer-size: 30vmin;
     
-    --slide-track: calc( 6 * 450px )
+    --slide-track: calc( 6 * 400px )
 }
 
 .red_bg{
@@ -144,7 +144,7 @@ header.hide{
 
 .slide-container {
 	background: white;
-	height: 300px;
+	height: 250px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
@@ -160,8 +160,8 @@ header.hide{
 }
 
 .slide {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     margin-right: 150px;
 }
 
@@ -181,13 +181,15 @@ header.hide{
     text-decoration: none;
     text-align: center;
     background-color: var(--primary-color);
-    padding: 25px;
+    padding: 20px;
     border-radius: 50px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .project img{
-    border-radius: 50px;
+    height: 250px;
+    width: 500px;
+    border-radius: 25px;
 }
 
 
