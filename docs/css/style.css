@@ -144,7 +144,7 @@ header.hide{
 
 .slide-container {
 	background: white;
-	height: 250px;
+	height: 275px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
@@ -163,6 +163,7 @@ header.hide{
     height: 250px;
     width: 250px;
     margin-right: 150px;
+    padding: 10px;
 }
 
 /* Projects Section */
