@@ -16,7 +16,7 @@
     --header-size: 20vmin;
     --footer-size: 30vmin;
     
-    --slide-track: calc( 6 * 400px )
+    --slide-track: calc( 5 * 400px )
 }
 
 .red_bg{
